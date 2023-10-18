@@ -22,7 +22,7 @@ Implement a function to convert an adjacency matrix to an adjacency list and
 analyze it as above.
   
 I used the following source in order to figure out how exactly to create a  
-2D array:  
+2D array in Javascript:  
 https://sentry.io/answers/how-can-i-create-a-two-dimensional-array-in-javascript/
 
 The runtime for converting an adjacency list to an adjacency matrix would be  
