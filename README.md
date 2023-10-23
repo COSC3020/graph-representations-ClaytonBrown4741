@@ -20,3 +20,25 @@ most important part. Add your answer to this markdown file.
 
 Implement a function to convert an adjacency matrix to an adjacency list and
 analyze it as above.
+  
+I used the following source in order to figure out how exactly to create a  
+2D array in Javascript:  
+https://sentry.io/answers/how-can-i-create-a-two-dimensional-array-in-javascript/
+
+The runtime for converting an adjacency list to an adjacency matrix would be  
+$\Theta(|V|+|E|)$. This is because in order to transfer the data between the two,  
+we must ultimately iterate over every possible edge and node in the data structure.  
+With adjacency lists, this is fairly simple. However, if we account for the creation  
+of the blank matrix first, then the runtime will be $|V^2|+|V|+|E|$ which ultimately  
+simplifies to $\Theta(|V^2|+|E|)$. This is because that in order to create a matrix  
+in this instance, it will have size of the number of nodes squared.  
+The runtime for converting an adjacency matrix to adjacency list would be  
+$\Theta(|V^2|)$. Unlike the adjacency list (which can simply look at any given  
+node and see which edges are attached to it), the adjacency matrix must go  
+through *every* possible place for an edge in order to see if it exists. As  
+a result, we end up going over every element in the data structure, the  
+number of which is $V^2$. This runtime is the same even when accounting for  
+the creation of the adjacency list at the beginning of the function,   
+as this is mainly done in the same loop that goes through every possible  
+element in the adjacency matrix data structure.
+
